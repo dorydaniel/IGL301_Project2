@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="Script.js"></script>
+        <link href="Style.css" rel="stylesheet"/>
+    </head>
+    <body>
+
+        <div id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">More</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="wrapper">
+            <div id="left">
+                <img src="money-logo.jpg" alt="Money Logo">
+                <p>Interest Rate</p>
+            </div>
+
+            <div id="right">
+                <table>
+                    <tr>
+                        <td>Amount</td>
+                        <td><input type="text" id="amountTxt" size="20" onkeydown="return validateAmount(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Rate</td>
+                        <td><input type="text" id="rateTxt" maxlength="2" size="20" onkeydown="return validateRate(event)"></td>
+                    </tr>
+                    <tr>
+                        <td>Months</td>
+                        <td><input type="text" id="monthsTxt" maxlength="2" size="20" onkeydown="return validatMonths(event)"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="btn"><input type="button" value="Calculate" onclick="calculate()"></td>
+                    </tr>
+                </table>
+                <div id="result">Interest Rate <input type="text" id="interest" size="20" readonly></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+#wrapper{
+    width:900px;
+    height: 600px;
+    margin:auto;
+}
+
+#menu ul{
+    text-align: center;
+    padding-left: 0px;
+}
+
+#menu ul li{
+    display: inline;
+}
+
+#menu ul li a{
+    color: green;
+    font-size: 30px;
+    margin: 0px 65px 0px 65px;
+}
+
+#wrapper #left{
+    float:left;
+    color: green;
+    font-size: 30px;
+}
+
+#wrapper #left p{
+    text-align: center;
+    margin-top: 0px;
+}
+
+#wrapper #right{
+    float:right;
+    background-color: green;
+    width: 500px;
+    height: 350px;
+    color: white;
+}
+
+#wrapper table{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#wrapper #btn{
+    text-align: right;
+}
+
+#wrapper #result{
+    margin-top: 100px;
+    margin-left: 220px;
+}
