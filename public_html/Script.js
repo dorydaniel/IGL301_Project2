@@ -15,17 +15,17 @@ function validateRate(e) {
         if ((value === null) || (value.trim() === "")) {
             return true;
         }
-        else if ((key === 48) || (key === 96) || (key === 8)) {
-            return true;
+            if ((key === 48) || (key === 96) || (key === 8)) {
+                return true;
+            }
+            else {
+                return false;
+            }
         }
         else {
             return false;
         }
     }
-    else {
-        return false;
-    }
-}
 
 function validateMonths(e) {
     var key = e.keyCode;
